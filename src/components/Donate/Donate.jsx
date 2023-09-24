@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Donate = ({ donate }) => {
   const {
     id,
@@ -14,7 +16,8 @@ const Donate = ({ donate }) => {
   }
 
   return (
-    <div className="">
+   <Link to={`/singleDonates/${id}`}>
+         <div className="">
       <div className="my-5 rounded-lg" style={donateStyle}>
         <figure>
           <img className="w-full rounded-lg"
@@ -31,6 +34,7 @@ const Donate = ({ donate }) => {
         </div>
       </div>
     </div>
+   </Link>
   );
 };
 
