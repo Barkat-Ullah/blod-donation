@@ -1,31 +1,44 @@
-const DonateCard = ({ donates }) => {
-  const {
-    id,
-    image,
-    title,
-    donate,
-    description,
-    category,
-    color_for_category_bg,
-    color_for_card_bg,
-    Color_for_text_and_button_background,
-  } = donates;
+/* eslint-disable no-unused-vars */
 
+import { useEffect, useState } from "react";
+import { useLoaderData } from "react-router-dom";
+import { getStoredDonate } from "../js/localStorage";
+import SingleDonars from "../Donars/SingleDonars";
+
+/* eslint-disable react/prop-types */
+const DonateCard = () => {
+    
+    const donated = useLoaderData()
+    const [donars, setDonars] = useState([])
+    const [showAll, setShowAll] = useState(4)
+
+  
+    useEffect(()=>{
+        const storedDonated = getStoredDonate()
+        if(donated.length > 0){
+            const cardDonate = donated.filter(donar => storedDonated.includes( donar.id) )
+            setDonars(cardDonate)
+            
+        }
+        
+    },[donated])
+    
   return (
-    <div>
-      <div className="card bg-base-200 shadow-xl">
-        <figure>
-          <img className="w-full h-[700px] rounded-lg" src={image} alt="Shoes" />
-        </figure>
-        <div className="card-body">
-          <div className="card-actions ">
-            <button className="btn btn-primary">{donate}</button>
-          </div>
-          <h2 className="card-title">{category}</h2>
-          <p>{description}</p>
-        </div>
-      </div>
+   <div>
+     <div  className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-10">
+      
+      {donars.slice(0, showAll).map((donar) => (
+        <SingleDonars key={donar.id} donar={donar} />
+      ))}
+
     </div>
+    <div className = {showAll === donars.length ? 'hidden' : ''}>
+       <div className="text-center my-4">
+       <button onClick={() => setShowAll(donars.length)} className="btn my-4 bg-gradient-to-r from-[#7E90FE] from-0% to-[#9873FF] to-100% text-yellow-50">See All</button>
+       </div>
+        </div>
+   </div>
+    
   );
 };
 

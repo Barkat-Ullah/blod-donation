@@ -1,6 +1,7 @@
 const Search = () => {
   return (
     <div className="">
+      <h2 className="text-center text-4xl font-bold text-yellow-500 mb-2">I Grow By Helping People In Need</h2>
       <div className="relative">
         <input
           type="text"
