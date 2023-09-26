@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Donate = ({ donate }) => {
+const Donate = ({ donate}) => {
   const {
     id,
     image,
@@ -18,7 +18,7 @@ const Donate = ({ donate }) => {
   return (
    <Link to={`/singleDonates/${id}`}>
          <div className="">
-      <div className="my-5 rounded-lg" style={donateStyle}>
+      <div className="my-5 rounded-lg w-[280px] h-[450px] "  style={donateStyle}>
         <figure>
           <img className="w-full rounded-lg"
             src={image}

@@ -9,8 +9,8 @@ const Home = () => {
     
     return (
         <div>
-            <Banner></Banner>
-            <Donates donates ={donates}></Donates>
+            <Banner donates={donates}></Banner>
+            {/* <Donates donates ={donates}></Donates> */}
         </div>
     );
 };
