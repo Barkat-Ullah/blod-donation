@@ -21,7 +21,7 @@ const Donate = ({ donate}) => {
          <div className="">
       <div className="my-5 rounded-lg w-[280px] h-[450px] "  style={donateStyle}>
         <figure>
-          <img className="w-full rounded-lg"
+          <img className="w-full h-[260px] rounded-lg"
             src={image}
             alt=""
           />

@@ -4,7 +4,7 @@ const ErrorPage = () => {
       <div className="">
         <img
           className="h-48 w-48 "
-          src="../../public/Resources/errorpage.png"
+          src={'https://i.ibb.co/XkW1hKm/errorpage.png'}
           alt=""
         />
       </div>
