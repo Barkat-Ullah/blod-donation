@@ -13,12 +13,9 @@ const SingleDonates = () => {
   const {
     // id,
     image,
-    title,
     donate,
     description,
     category,
-    color_for_category_bg,
-    color_for_card_bg,
     Color_for_text_and_button_background,
   } = findDonate;
 
@@ -26,8 +23,7 @@ const SingleDonates = () => {
     saveDonates(idInt);
     toast("Successfully Donated");
 
-    // const event = new Event("updateChart");
-    // window.dispatchEvent(event);
+  
   };
 
   return (

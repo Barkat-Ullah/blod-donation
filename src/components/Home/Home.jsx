@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../Banner/Banner";
-import Donates from "../Donates/Donates";
+
 
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div>
             <Banner donates={donates}></Banner>
-            {/* <Donates donates ={donates}></Donates> */}
+           
         </div>
     );
 };

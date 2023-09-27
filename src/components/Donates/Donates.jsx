@@ -1,9 +1,9 @@
+/* eslint-disable react/prop-types */
 import Donate from "../Donate/Donate";
 
 
 const Donates = ({donates}) => {
-    
-    // console.log(donates);
+ 
     return (
         <div className="flex flex-wrap justify-center items-center gap-4 mt-10">
             {

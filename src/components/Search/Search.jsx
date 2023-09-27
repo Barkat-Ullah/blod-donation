@@ -124,9 +124,9 @@ const Search = ({ donates }) => {
         <div className="h-full w-full flex justify-center items-center bg-[#c7c2c275]">
      
           <form onSubmit={handleSubmit} className="flex">
-            <input className="text-black pl-2" type="text" name="name" id="" />
+            <input className="text-black pl-2 rounded-l-xl" placeholder="Search here" type="text" name="name" id="" />
             <input
-              className="text-xl p-2 rounded-[4px] bg-[#FF444A]"
+              className="text-xl text-yellow-50 p-2 rounded-[4px] bg-[#FF444A]"
               type="submit"
               value="Search"
             />

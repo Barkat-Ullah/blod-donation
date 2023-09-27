@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 
 const Donate = ({ donate}) => {
@@ -27,7 +28,7 @@ const Donate = ({ donate}) => {
         </figure>
         <div className="card-body">
           <div className="card-actions justify-start" style={{}}>
-            <button className="btn" style={{backgroundColor: Color_for_text_and_button_background, color: color_for_category_bg}}>{category}</button>
+            <button className="btn" disabled style={{backgroundColor: Color_for_text_and_button_background, color: color_for_category_bg}}>{category}</button>
           </div>
           <h2 className="card-title" style={{ color: color_for_category_bg}}>{title}</h2>
           

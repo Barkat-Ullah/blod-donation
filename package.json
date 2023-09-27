@@ -12,9 +12,13 @@
   "dependencies": {
     "@mui/material": "^5.14.10",
     "@mui/x-charts": "^6.0.0-alpha.12",
+    "apexcharts": "^3.42.0",
+    "chart.js": "^4.4.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
+    "react-apexcharts": "^1.4.1",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-google-charts": "^4.0.1",
     "react-router-dom": "^6.16.0",
